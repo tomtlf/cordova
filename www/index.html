@@ -33,17 +33,65 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <title>Rappelle-toi</title>
+        <meta name="viewport" content="initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/font-pacifico.css">
+		<link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+    <body class="app">
+	<!-- Timeline view -->
+		<section class="view" id="timeline">
+			[Contenu de la vue Timeline]        
+		</section>
+	<!-- Picture modal view -->
+	<section class="view modal" id="picture">
+	[Contenu de la vue Picture]
+	</section>
+	<!-- Video modal view -->
+	<section class="view modal" id="video">
+	[Contenu de la vue Video]
+	</section>
+	<!-- Text modal view -->
+	<section class="view modal" id="text">
+	[Contenu de la vue Text]
+	</section>
+	<!-- Location modal view -->
+	<section class="view modal" id="location">
+	[Contenu de la vue Location]
+	</section>
+	<!-- Templates -->
+	<script id="imageTemplate" type="html/template">
+[Template de représentation d’une image]
+	</script>
+	<script id="videoTemplate" type="html/template">
+[Template de représentation d’une vidéo]
+	</script>
+	<script id="textTemplate" type="html/template">
+[Template de représentation d’un texte]
+	</script>
+	<script id="locationTemplate" type="html/template">
+[Template de représentation d’une géolocalisation]
+	</script>
+	<script id="helpTemplate" type="html/template">
+[Template d’une entrée dans l’aide]
+	</script>
+	<script id="timelineTemplate" type="html/template">
+[Template de représentation d’une entrée de la timeline]
+	</script>
+	<!-- Scrips imports -->
+	<script src="cordova.js"></script>
+	<script src="js/lib/fastclick.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/views/modal.js"></script>
+	<script src="js/views/timeline.js"></script>
+	<script src="js/views/picture.js"></script>
+	<script src="js/views/video.js"></script>
+	<script src="js/views/text.js"></script>
+	<script src="js/views/location.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 </html>
